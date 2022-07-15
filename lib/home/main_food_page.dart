@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../assets/colors/app_colors.dart';
+import '../widgets/texts/big_text.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -31,7 +32,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 children: [
                   Column(
                     children: [
-                      Text("Country"),
+                      BigText(
+                        text: "Vietnam",
+                        color: AppColors.mainColor,
+                      ),
                       Text("City"),
                     ],
                   ),
@@ -41,7 +45,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       height: 45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: AppCollors.mainColor,
+                        color: AppColors.mainColor,
                       ),
                       child: const Icon(
                         Icons.search,
